@@ -4,9 +4,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <style>
+        body {
+          padding: 25px;
+          background-color: white;
+          color: black;
+          font-size: 25px;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+        </style>
 </head>
 <body>
-    <h1>hello world!</h1>
+    <nav>
+    <h1 id="name">Chinarom Hannarong</h1>
+    <ul class="navigation-items">
+        <li class="navigation-item"><a href="#about-me">About me</a></li>
+        <li class="navigation-item"><a href="#projects">Projects</a></li>
+        <li class="navigation-item"><a href="#education">Education</a></li>
+        <li class="navigation-item"><a href="#skills">Skills</a></li>
+        <li class="navigation-item"><a href="#contact">Contacts</a></li>
+    </ul>
+</nav>
+
+<main>
+
+    <!-- about me -->
+    <section id="about-me">
+        <div class="about-me-container">
+            <div class="about-me-text-container">
+                <h2>About me</h2>
+                <p>
+                    Hi! I'm an engineering student who interested in web 
+                    development environment my aim is to explore and learn 
+                    about creating website by modern technology and framework
+                    such as react.js, vue.js.
+                </p>
+                <p>
+                    My first programming language is C#, somehow I'm interested 
+                    to build a beautiful website online on my own.therefore, I
+                    decided to take front end engineer course with codecademy, which
+                    provide me the resources and knowledge about web. Furthermore, I
+                    learn HTML, CSS and JS during this course.
+                </p>
+                <p>
+                    In my free time, I like to spend my time on reading online
+                    article, watching movies, playing computer games and
+                    solving puzzles. I also love to learn new things.</p>
+                <p>
+                    Fun fact! I've been programming for
+                    <span id="time-container">0</span> seconds!
+                </p>
+            </div>
+
+            <!-- photo of Chinarom -->
+            <img class="portrait" src="https://i.ibb.co/V3YCNhv/china.jpg" alt="china" border="0"></a> 
+            
+        </div>
+    </section>
+
+    <!-- Project part -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- first project -->
+        <details class="project">
+            <summary class="project-title">
+                <h3>My first website</h3>
+            </summary>
+            <!-- image of valorant project -->
+            <img src="https://i.ibb.co/t8PQJTL/Project1.png" 
+            alt="My first website image"
+            class="project-image"
+            />
+            <!-- Project description -->
+            <p class="project-description">
+              My first website created by using HTML and CSS.
+            </p>
+        </details>
+
+        <!-- second project -->
+        <details class="project">
+            <summary class="project-title">
+                <!-- project title -->
+                <h3>Wine Festival Project</h3>
+            </summary>
+            <!-- image of ... project -->
+            <img src="https://i.ibb.co/44x42JL/Project3.png" 
+            alt="My second project image"
+            class="project-image"
+            />
+            <!-- Project description -->
+            <p class="project-description">
+              My second website using HTML table and CSS.
+            </p>
+        </details>
+
+        <!-- third project -->
+        <details class="project">
+            <summary class="project-title">
+                <!-- project title -->
+                <h3>Number Guesser Project</h3>
+            </summary>
+            <!-- image of ... project -->
+            <img src="https://i.ibb.co/xCdP1cp/Project2.png" 
+            alt="My third project image"
+            class="project-image"
+            />
+            <!-- Project description -->
+            <p class="project-description">
+                My third website using HTML, CSS and JavaScript to make Number-guesser mini game.
+            </p>
+        </details>
+    </section>
+
+    <!-- Education part -->
+    <section id="education">
+            <div class="education-text-container">
+                <h2>Education</h2>
+                <h3>2017-2021</h3>
+                <p>
+                    Assumption University (Undergraduted)
+                </p>
+                <p>
+                    Major : Telecommunication Engineering (last semester).
+                </p>
+                <h3>2010-2016</h3>
+                <p>
+                    Assumption College Samutprakarn
+                </p>
+                <p>
+                    Graduated with certificate
+                </p>
+            </div>
+    </section>
+
+    <!-- Skills part -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div id="skills-container">
+            <img src="https://i.ibb.co/bsT6qvk/HTML5.png" alt="html5 logo">
+            <img src="https://i.ibb.co/5Rzxq5p/CSS3.png" border="0"></a>
+            <img src="https://i.ibb.co/sqZncyP/JS.png" alt="JavaScript logo">
+            <img src="https://i.ibb.co/Vw9nfnp/GIT.png" alt="Git logo">
+            <img src="./images/GITHUB.png" alt="Github logo">
+        </div>
+    </section>
+</main>
+
+<!-- Contact part -->
+<footer>
+    <section id="contact">
+        <h2>Contacts</h3>
+        <div id="contact-container">
+            <div>
+            <img class="logo" src="https://i.ibb.co/K6HyBPp/email.jpg" alt="email-logo">
+            <a href="mailto:cnrza6011064@gmail.com"><h3 class="picture">cnrza6011064@gmail.com</h3></a>
+            </div>
+            <div>
+                <img class="logo" src="https://i.ibb.co/ByLXpxw/tel.png" alt="tel-logo">
+                <h3 class="picture">062-549-0999</h3>
+            </div>
+            <div>
+                <img class="logo" src="https://i.ibb.co/FzscJpD/GITHUB.png" alt="github-logo">
+                <a href="https://github.com/cnrza999"><h3 class="picture">https://github.com/cnrza999</h3></a>
+            </div>
+            <p><strong>Click the button to toggle between dark and light mode for this page.</strong></p>
+            <button onclick="myFunction()">Toggle dark mode</button>
+        </div>
+        
+    </section>
+
+   
+</footer>
 </body>
+
+    <script>
+    const timeContainer = document.getElementById("time-container");
+    const BIRTH_DAY = "10-09-2018";
+    const BIRTH_DAY_DATE = new Date(BIRTH_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+      const now = new Date();
+      const difference = Math.floor(
+        (now.getTime() - BIRTH_DAY_DATE.getTime()) / 1000
+      );
+
+      timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
+     </script>
+
+    <script>
+    function myFunction() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
+    
 </html>
+
+
+
+
+
+
